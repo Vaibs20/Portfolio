@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+            <div class="logo">
+                <img src="imgs\Screenshot 2024-07-18 154214.png" alt="Logo">
+            </div>
+
+            <div class="nav-links">
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="sidebar" id="sidebar">
+                <div class="nav-links">
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+    <main>
+        <section class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my work and projects.</p>
+        </section>
+        <section class="content">
+            <div class="content-section">
+                <img src="project1.jpg" alt="Project 1">
+                <h2>Project 1</h2>
+                <p>Description of Project 1.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="content-section">
+                <img src="project2.jpg" alt="Project 2">
+                <h2>Project 2</h2>
+                <p>Description of Project 2.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+    <script src="port.js"></script>
+</body>
+
+</html>
